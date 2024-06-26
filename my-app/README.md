@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+My Todo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple Todo application built with React. It allows users to add, remove, and view todos. The data is fetched from and stored in Airtable.
 
-## Available Scripts
+Table of Contents
+
+Features
+Getting Started
+Available Scripts
+Configuration
+Styling
+Learn More
+Features
+
+Add new todos
+Remove existing todos
+Fetch todos from Airtable
+Display todos in a sorted order
+Responsive design
+Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+Prerequisites
+Make sure you have the following installed on your machine:
+
+Node.js
+npm
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/your-username/my-todo-app.git
+cd my-todo-app
+Install the dependencies:
+
+bash
+Copy code
+npm install
+Start the development server:
+
+bash
+Copy code
+npm start
+Open http://localhost:3000 to view it in your browser.
+
+Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+npm start
+Runs the app in development mode.
+Open http://localhost:3000 to view it in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
+The page will reload when you make changes.
 You may also see any lint errors in the console.
 
-### `npm test`
+npm test
+Launches the test runner in interactive watch mode.
+See the section about running tests for more information.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
+npm run build
+Builds the app for production to the build folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm run eject
+Note: this is a one-way operation. Once you eject, you can't go back!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If you aren't satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
 
-### `npm run eject`
+Configuration
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Airtable Setup
+Create an Airtable base with a table named Default.
+Add a field named Title to the table.
+Get your Airtable API key and Base ID.
+Environment Variables
+Create a .env file in the root of your project and add your Airtable credentials:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+env
+Copy code
+REACT_APP_AIRTABLE_API_KEY=your_api_key
+REACT_APP_AIRTABLE_BASE_ID=your_base_id
+Styling
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application uses a custom styles.css file for styling. Key styles include:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Background color of the page body
+Default text color
+Customized font family (using Google Fonts)
+Spacing (padding/margin) between elements
+Customized input and button styles
+Responsive design with media queries
+Learn More
 
-## Learn More
+To learn more about Create React App, check out the Create React App documentation.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To learn React, check out the React documentation.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+For more advanced configuration, see Advanced Configuration.
 
-### Code Splitting
+Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+For deployment instructions, see Deployment.
 
-### Analyzing the Bundle Size
+Troubleshooting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you run into any issues, check the Troubleshooting section.

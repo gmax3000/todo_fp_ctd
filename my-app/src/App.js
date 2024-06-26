@@ -1,6 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import TodoContainer from './components/TodoContainer';
 
 const Home = () => <h2>Home Page</h2>;
 const About = () => <h2>About Page</h2>;
@@ -14,13 +15,11 @@ Home.propTypes = {
 
 const App = () => {
   return (
-    <Router>
-      <Switch>
-      <Route exact path="/" render={() => <Home message="Welcome to the Home Page!" />} />
+    <Routes>
+      <Route path="/" element={ <TodoContainer tableName="Todo Table"/>} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
-      </Switch>
-    </Router>
+    </Routes>
   );
 };
 
